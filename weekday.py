@@ -7,12 +7,12 @@ my_date = date.today()
 today = calendar.day_name[my_date.weekday()]
 
 weekday = ("Monday","Tuesday","Wednesday","Thursday","Friday")
-weekend = ("Saturday","Sunday")
 
-for today in weekday:
+if today in weekday:
     print("Yes, unfortunately today is a weekday.")
-
-for today in weekend:
+else:
     print("It is the weekend, yay!")
+
+
 
 
