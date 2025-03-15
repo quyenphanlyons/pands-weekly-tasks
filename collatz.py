@@ -1,14 +1,14 @@
 #the user to input any positive integer and outputs the successive values of the following calculation.
 #At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 
-
+#Ask user to enter a positive number
 x = int(input("Enter a positive number: "))
 
 #Ask user to enter a number until receiving a positive number
 while x <= 0: 
     x = int(input("Please enter only positive number: "))
 
-#Create a list contains the first value of x
+#Create a list contains the value entered
 list=[x]
 
 #if first value of x is 1, the calculation of the next value processes anyway      

@@ -1,6 +1,6 @@
 # Write a program that outputs whether or not today is a weekday
 
-# Find out what day it is
+# Find out what day it is Source stackoverflow
 from datetime import date
 import calendar
 my_date = date.today()
