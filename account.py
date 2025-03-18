@@ -10,8 +10,11 @@ correctlen=10 # correctlen is fixed at 10
 
 #Only display the account number when it contains 10 digits (when n=correctlen)
 #If else send an error message
+
 if n == correctlen:
     print("User's account number is {}".format(display))
 else: 
     print('This is not a valid number')
+    account = int(input('Please enter 10 digit of an account number: '))
+
 
