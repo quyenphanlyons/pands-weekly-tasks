@@ -10,7 +10,6 @@
 # n is the number whose square root we need to calculate
 # x is a guess of square root of n, x will be 1 by default if user doesn't enter a value for x
 def sqr(n,x=1):
-
     # Calculate x1: the new value of square root of n
     x1 = x - ((pow(x, 2) - n))/(2*x)
     # Calculate the difference of x1 and x
@@ -25,5 +24,6 @@ def sqr(n,x=1):
             dif = abs(x1-x)
     else: 
         return "Error: The number must be positive!"
-    return x1
+    # Round the output to the 2nd decimal place
+    return round(x1,2)
 
