@@ -3,7 +3,7 @@
 # let's call x the guess valur of S
 # f(x) = x**2 - n
 # f'(x) = 2x
-# x(n+1) = x(n) - f(x) / f'(x) which is 
+# x(n+1) = x(n) - f(x) / f'(x) 
 
 
 # the function squareroot id defined with 2 parameters: n and x.
@@ -27,3 +27,6 @@ def sqr(n,x=1):
     # Round the output to the 2nd decimal place
     return round(x1,2)
 
+n=14.5
+
+print(f"Square root of {n} is {sqr(n,x=1)}")
