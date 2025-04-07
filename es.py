@@ -6,10 +6,3 @@ from urllib.request import urlopen
 data = urlopen(link).read().decode('utf-8')
 data.count('e')
 
-
-
-import requests
-response = requests.get(link)
-data1 = response.text
-data1.count('e')
-
