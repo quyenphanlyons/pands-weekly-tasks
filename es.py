@@ -1,8 +1,7 @@
 # I created a file Mobydick.txt in my repository pands-weekly-tasks
-link = "https://github.com/quyenphanlyons/pands-weekly-tasks/blob/main/Mobydick.txt"
-
-# Open file in python - Source stackoverflow.com
-from urllib.request import urlopen
-data = urlopen(link).read().decode('utf-8')
-data.count('e')
-
+# Open text file
+with open("mobydick.txt") as f:
+  # Read file
+ data = f.read()
+  # Count the number of letter 'e'
+ data.count("e")
