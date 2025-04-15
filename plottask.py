@@ -19,28 +19,33 @@ y = np.linspace(0, 10, 11)
 # Create z which is h(y)=y3, I use function pow() to calculate z from y, another way to calculate z is z = y**3
 z = pow(y,3)
 
-# Histogram of group 1
-plt.hist(x, bins=20, color = 'orange', edgecolor='black', label='Normal distribution mean of 5 and standard deviation of 2', alpha=0.5)
+# Create the figure and first axis
+fig, ax1 = plt.subplots()
+
+# Histogram of group 1 on ax1
+ax1.hist(x, bins=20, color = 'orange', edgecolor='black', alpha=0.5)
+ax1.set_xlabel('x')
+ax1.set_ylabel('Histogram of normal distribution mean of 5 and sdt of 2', color='orange')
+
+# Create a second y-axis sharing the same x-axis
+ax2 = ax1.twinx()
 
 # Plot the fucntion h(y)=y3
-plt.plot(y, z, label='h(x) = x3', color = 'green')
+ax2.plot(y, z, color = 'green', label = 'h(x) = x3')
+ax2.set_ylabel('Plot of function h(x) = x3', color='green')
 
 # Add title and labels
 plt.title('Histogram and Function Plot on Same Axes')
-plt.xlabel('x')
-plt.ylabel('Density / h(x)')
 plt.legend()
 
 # put a copy of the image of the plot (.png file) into the repository
 plt.savefig("task8_plot.png")
 
-# Show the plot
-plt.grid(True)
-plt.tight_layout()
-plt.show()
 
 # Resources
 # https://www.w3schools.com/python/matplotlib_histograms.asp
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
 # https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html
+# https://stackoverflow.com/questions/14762181/adding-a-y-axis-label-to-secondary-y-axis-in-matplotlib
+
 
