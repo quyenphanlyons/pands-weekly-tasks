@@ -11,17 +11,19 @@
 # Create function to read and count a specific letter
 # Function takes 2 parameters: textfile (name of the file needed to be read) and letter (the specific letter needed to be counted) which takes value 'e' by default
 def numletter(textfile, letter = 'e'):
- # Open text file
- with open(textfile) as f:
-  # Read file
-  data = f.read()
-  # Count the number of the letter in lowercase
-  data.count(letter)
-  # Count the number of the letter in uppercase
-  letter_uppercase = letter.upper()
-  data.count(letter_uppercase)
-  # Output the number of the letter
-  return data.count(letter) + data.count(letter_uppercase)
+  try:
+  # Open text file
+    with open(textfile, 'r', encoding='utf-8') as f:
+      # Read file
+      data = f.read()
+      # Uppercase the letter
+      letter_uppercase = letter.upper()
+      # Output the number of the letter
+      return data.count(letter) + data.count(letter_uppercase)
+  except FileNotFoundError:
+    print(f"Error: The file '{textfile}' does not exist.")
+  except UnicodeDecodeError:
+    print(f"Error: The file '{textfile}' is not a text file.")
 
 
 # Output the number of the letter 'e' in moby_dick.txt
@@ -32,4 +34,8 @@ numletter("moby_dick.txt",)
 # Ressources
 # https://www.w3schools.com/python/ref_string_count.asp
 # https://www.w3schools.com/python/ref_string_upper.asp
+# https://www.w3schools.com/python/python_ref_exceptions.asp
+# https://docs.python.org/3/tutorial/errors.html
+
+
 
