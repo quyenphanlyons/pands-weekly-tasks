@@ -4,8 +4,12 @@
 # Some marks will be given for making the plot look nice (legend etc).
 # Please put a copy of the image of the plot (.png file) into the repository
 
+# -------------------
+
+
 # Plotting.
 import matplotlib.pyplot as plt
+
 # Numerical arrays.
 import numpy as np
 

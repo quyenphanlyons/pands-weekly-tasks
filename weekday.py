@@ -1,6 +1,11 @@
+# Task 5
+# Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
+# You will need to search the web to find how you work out what day it is.
 # Write a program that outputs whether or not today is a weekday
 
-# Find out what day it is Source stackoverflow
+# -------------------
+
+
 from datetime import date
 import calendar
 my_date = date.today()
@@ -13,6 +18,9 @@ if today in weekday:
 else:
     print("It is the weekend, yay!")
 
+
+# Ressources
+# Find out what day it is Source stackoverflow
 
 
 

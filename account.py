@@ -1,6 +1,8 @@
-#Task 3
-#Please enter an 10 digit account number
-#only display the last 4 characters (with the other other characters replaced with Xs)
+# Task 3
+# Write a python program called accounts.py that reads in a 10 character account number and 
+# outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+
+# -------------------
 
 account = int(input('Please enter 10 digit of an account number: ')) # variable account can only contains numbers
 account_str = str(account) # create variable account_str type string from variable account
