@@ -21,6 +21,7 @@ else:
 
 # Ressources
 # Find out what day it is Source stackoverflow
+# https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date
 
 
 
