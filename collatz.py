@@ -15,13 +15,19 @@ while x <= 0:
 # Create a list contains the value entered
 list=[x]
 
-# if first value of x is 1, the calculation of the next value processes anyway      
+# if first value of x is 1, the calculation of the next value processes anyway  
+# if x is an even number    
 if x%2==0:  
+    # divide it by two
     x = int(x/2)
-    list.append(x) #Add the new value of x in the existing list
+    #Add the new value of x in the existing list
+    list.append(x) 
+# if x is an odd number
 else: 
+    # multiply it by three and add one
     x = int(x*3+1)
-    list.append(x) #Add the new value of x in the existing list
+    #Add the new value of x in the existing list
+    list.append(x) 
 
 # after the second value is added in the list apply the condition while until the value of x=1
 while x!=1: 
@@ -33,8 +39,3 @@ while x!=1:
         list.append(x)
 
 print(*list)
-
-
-
-
-

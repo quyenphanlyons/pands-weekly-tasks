@@ -8,10 +8,13 @@
 # -------------------
 
 
-# Ask user to put 2 amounts in cent
+# Ask user to put 2 amounts in cent by using input()
+# split: for taking multi inputs
+# map: converts each input into the defined datatype which is integer
+
 a1,a2=map(int, input("Please enter two amounts in cent: ").split()) 
-#input: taking value
-#split: for taking multi inputs
-#map: converts each input into the defined datatype which is integer
+
 sum=(a1+a2)/100
-print('€',sum) #print out this sum with the currency in front
+
+#print out this sum with the currency in front
+print('€',sum) 

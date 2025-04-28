@@ -4,19 +4,18 @@
 
 # -------------------
 
+# Ask user to enter an account number by using int()
 account = int(input('Please enter 10 digit of an account number: ')) # variable account can only contains numbers
-account_str = str(account) # create variable account_str type string from variable account
-display = account_str.replace(account_str[0:6],'XXXXXX') # create variable displace from variable account_str by replacing the first 6 character of variable account_str by XXXXXX
-n = len(account_str) # n is the number of characters in variable account_str 
-correctlen=10 # correctlen is fixed at 10
 
-#Only display the account number when it contains 10 digits (when n=correctlen)
-#If else send an error message
-
-if n == correctlen:
+# Turn the account number entered into string and store it in account_str
+account_str = str(account)
+# n: the number of characters in variable account_str 
+n = len(account_str)
+# Only display the account number when it contains 10 digits (when n=correctlen)
+# If else send an error message
+if n == 10:
+    # Replace the first 6 characters of variable account_str by XXXXXX and store it in display
+    display = account_str.replace(account_str[0:6],'XXXXXX') 
     print("User's account number is {}".format(display))
 else: 
-    print('This is not a valid number')
-    account = int(input('Please enter 10 digit of an account number: '))
-
-
+    account = int(input('Account number must be exactly 10 digits. Please enter again an account number: '))

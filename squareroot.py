@@ -39,6 +39,7 @@ def sqr(n,x=1):
     # Round the output to the 2nd decimal place
     return round(x1,2)
 
+# enter the value to calculate its square root: for example 14.5
 n=14.5
 
 print(f"Square root of {n} is {sqr(n,x=1)}")
